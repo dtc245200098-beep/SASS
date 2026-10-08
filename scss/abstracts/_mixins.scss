@@ -1,11 +1,16 @@
-@use "variables" as *;
+
+@use "variables" as v;
+
 @mixin button-style($bg-color) {
   background: $bg-color;
   color: white;
-  padding: 10px 20px;
+  padding: v.$padding-standard;
   border-radius: 5px;
 }
 
-@mixin box-shadow {
-  box-shadow: $box-shadow;
+@mixin box-style {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: v.$box-shadow-default;
 }
